@@ -1,0 +1,161 @@
+/* CSS Variables Definitions */
+:root {
+    --bg-color-dark: #222222;
+    --bg-color-blue-lt: #C2E8F9;
+    --bg-color-blue-md: #83D0F2;
+    --bg-color-blue-dk: #007BFF;
+    --bg-color-gray: #E9ECEF;
+    --text-color-blue: #6AD0F2;
+    --text-size-primary: 14px;
+}
+
+/* Main Styles */
+body {
+    background-color: var(--bg-color-gray);
+}
+
+.container-fluid {
+    background-color: white;
+}
+
+.table td, .table th {
+    border-top: none;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.header-top {
+    background-color: var(--bg-color-dark);
+    padding: 10px;
+    text-align: center;
+}
+
+.header-top h1 {
+    color: white;
+    padding-top: 1rem;
+}
+
+.header-top p {
+    color: var(--text-color-blue);
+    font-size: calc(var(--text-size-primary) + 2px);
+}
+
+.header-bottom {
+    background-color: var(--bg-color-blue-md);
+    padding: 10px;    
+}
+
+
+.header-bottom table {
+    margin-bottom: 0;   
+}
+
+.header-bottom .table th {
+    width: 80px;
+}
+
+header{
+    position: relative;
+}
+
+header img{
+    width: 150px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border: 2px solid white;
+}
+
+div.about-me {
+    background-color: var(--bg-color-blue-lt);
+    padding-bottom: 1rem;
+}
+
+.about-me h2 {
+    padding-top: 1rem;
+}
+
+.about-me p{
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    padding-top: 2rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: var(--text-size-primary);
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+
+
+
+a {
+    font-size: 14px;
+}
+
+th {
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+}
+
+section th {
+    width: 18%;
+}
+
+section.languages span {
+    font-size: 16px;
+    color: var(--bg-color-blue-dk);
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+.footer {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-blue);
+}
+
+.footer h2 {
+    margin: 0;
+    padding: 1rem;
+}
+
+.footer i {
+    font-size: 25px;
+}
+
+
+/* The following rule is to override Bootstrap default behaviour which prints background color of tables as white */
+@media print { 
+    .table td, .table th { 
+        background-color: inherit !important; 
+    } 
+}
