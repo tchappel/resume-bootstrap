@@ -18,21 +18,12 @@ body {
     background-color: white;
 }
 
-.table td, .table th {
-    border-top: none;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-}
-
 .header-top {
     background-color: var(--bg-color-dark);
-    padding: 10px;
-    text-align: center;
 }
 
 .header-top h1 {
     color: white;
-    padding-top: 1rem;
 }
 
 .header-top p {
@@ -42,7 +33,6 @@ body {
 
 .header-bottom {
     background-color: var(--bg-color-blue-md);
-    padding: 10px;    
 }
 
 
@@ -60,10 +50,11 @@ header{
 
 header img{
     width: 150px;
-    position: absolute;
-    top: 15px;
-    right: 20px;
     border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
 }
 
 div.about-me {
@@ -157,5 +148,8 @@ section.languages span {
 @media print { 
     .table td, .table th { 
         background-color: inherit !important; 
-    } 
+    }
+    body {
+        height: 100vh;
+    }
 }
